@@ -1,1 +1,1 @@
-# https://*AndronovAndrew.github.io
+# AndronovAndrew.github.io
