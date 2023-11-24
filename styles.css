@@ -33,13 +33,11 @@
   box-sizing: border-box;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-items: baseline;
   position: relative;
   margin: 0 auto;
   max-width: 1414px;
   width: 100%;
-  padding-left: 40px;
-  padding-right: 40px;
 }
 
 .page-header__logo{
