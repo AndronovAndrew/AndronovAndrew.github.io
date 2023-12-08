@@ -16,6 +16,7 @@
   font-weight: 400;
   font-style: normal;
   line-height: 1.375;
+  background: url(<path-to-image>), lightgray 0% 0% / 100px 100px repeat;
 }
 .home {
   padding-top: 147px;
@@ -255,11 +256,92 @@
   background-color: #A51505;
   color: #ffffff;
 }
-.mill__container {
+.mill {
+  padding-top: 208px;
+}
+.block {
+  max-width: 1414px;
   width: 100%;
-  padding-top: 200px;
-  -ms-flex-item-align: center;
-      align-self: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.block__title {
+  font-family: Open Sans;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  max-width: 868px;
+}
+.block__text-container {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  max-width: 867px;
+}
+.block__text {
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.block__photos {
+  padding-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.block__left {
+  max-width: 870px;
+  max-height: 577px;
+}
+.block__right {
+  max-width: 570px;
+  max-height: 535px;
+  margin-top: 288px;
+  margin-left: 60px;
+}
+.block__2 {
+  margin-top: -100px;
+}
+.block__photo-left {
+  padding-top: 28px;
+  max-width: 872px;
+  max-height: 361px;
+}
+.block__right-text {
+  padding-left: 68px;
+  margin-top: -150px;
+  max-width: 343px;
+  margin-bottom: -136px;
+}
+.block__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 40px;
+  padding-top: 250px;
+}
+.block__nav-btns {
+  padding-left: 80px;
+}
+.align__ctr {
+  margin-top: -48px;
+  margin-left: 65px;
 }
 .card-event {
   -webkit-box-sizing: border-box;
@@ -342,7 +424,7 @@
   width: calc(33.333% - 40px);
 }
 .events {
-  padding-top: 147px;
+  padding-top: 218px;
 }
 .events__container {
   -webkit-box-orient: vertical;
