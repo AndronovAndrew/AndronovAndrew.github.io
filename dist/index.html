@@ -14,6 +14,21 @@
 <body class="body">
 
   <main class="main">
+    <header class="page-header">
+      <div class="page-header__container">
+        <a href="index.html" class="page-header__logo">
+          <img src="assets/images/logo.png">
+        </a>
+        <nav class="page-header__nav">
+          <a href="#" class="page-header__nav-link">Мероприятия</a>
+          <a href="#" class="page-header__nav-link">Блог</a>
+          <a href="#" class="page-header__nav-link">О нас</a>
+          <a href="#" class="page-header__nav-link">Контакты</a>
+        </nav>
+        <a href="#" class="btn page-header__user-btn">Войти</a>
+      </div>
+
+    </header>
     <header class="main-header home__main-header">
       <h1 class="main-header__title">арт - пространство </h1>
       <picture class="main-header__picture">
@@ -24,14 +39,40 @@
         место для настоящего
       </p>
     </header>
-    <div class="home">
+    <!-- <div class="home">
       <section class="offers home__offers"></section>
       <section class="about home__about"></section>
       <section class="upcoming home__upcoming"></section>
       <section class="listing home__listing"></section>
       <section class="contacts home__contacts"></section>
       <div class="doit home__doit"></div>
+    </div> -->
+    <div class="want">
+      <div class="want__container">
+        <h3 class="want__text">
+          Я хочу:
+        </h3>
+        <div class="want__btns__container">
+          <button class="want__btns btn1" type="button">
+            <p class="want__btn-text">
+              Провести мероприятие
+            </p>
+          </button>
+          <a href="#">
+            <button class="want__btns btn2" type="button">
+              <p class="want__btn-text">
+                Стать арендатором
+              </p>
+            </button>
+          </a>
+        </div>
+      </div>
     </div>
+
+    <div class="mill__container">
+      <h2 class="mill__tittle tittle">О нас</h2>
+    </div>
+
     <div class="events">
       <div class="events__container">
         <h2 class="events__title tittle">Мероприятия</h2>
@@ -86,132 +127,7 @@
   <footer class="page-footer">
 
   </footer>
-  <div class="pp">
-    <div class="pp__container">
-      <div class="pp__sticky-close">
-        <button type="button" class="pp__sticky-btn">
-          <svg class="pp__btn-icon" wight="24" height="24">
-            <use xlink:href="assets/svg-sprite/close.png"></use>
-          </svg>
-        </button>
-      </div>
-      <div class="pp__wrapper">
-        <h3 class="pp__tittle">
-          Заполните форму
-          <br />
-          И мы подберем площадку
-        </h3>
-        <div class="pp__form form">
-          <div class="pp__list">
-            <div class="form__field">
-              <h6 class="form__tittle">
-                Формат предприятия:
-              </h6>
-              <div class="field__radio radio" radio>
-                <label class="radio__label">
-                  <input type="radio" name="format" value="seminar" class="radio__input" />
-                  <span class="radio__mark"></span>
-                  <span class="radio__name">Мастер-класс/семинар</span>
-                </label>
-                <label class="radio__label">
-                  <input type="radio" name="format" value="concert" class="radio__input" />
-                  <span class="radio__mark"></span>
-                  <span class="radio__name">Концерт/выступление</span>
-                </label>
-                <label class="radio__label">
-                  <input type="radio" name="format" value="show" class="radio__input" />
-                  <span class="radio__mark"></span>
-                  <span class="radio__name">Выставка/показ</span>
-                </label>
-                <label class="radio__label">
-                  <input type="radio" name="format" value="other" class="radio__input" />
-                  <span class="radio__mark"></span>
-                  <span class="radio__name">Другое</span>
-                </label>
-              </div>
-            </div>
-            <div class="form__group">
-              <div class="form__field field">
-                <h6 class="field__tittle">Планируемое количество посетителей:</h6>
-                <select name="amount" class="field__select">
-                  <option value="20">
-                    до 20 человек
-                  </option>
-                  <option value="100">
-                    от 20 до 100 человек
-                  </option>
-                  <option value="500">
-                    от 20 до 500 человек
-                  </option>
-                  <option value="501">
-                    более 500 человек
-                  </option>
-                </select>
-              </div>
-              <div class="form__field field">
-                <h6 class="field__tittle">Дата проведения:</h6>
-                <div class="field__inputs">
-                  <input class="field__input--w55 field--datetime" type="text" placeholder="ДД">
-                  <input class="field__input--w55 field--datetime" type="text" placeholder="ММ">
-                  <input class="field__input--w110 field--datetime" type="text" placeholder="ГГГГ">
-                </div>
-              </div>
-            </div>
-            <div class="form__section">
-              <h6 class="field__tittle">
-                Контактные данные:
-              </h6>
-              <div class="form__list">
-                <label class="form__field form__field--w50 field">
-                  <span class="field__label">
-                    Имя*
-                    <input type="text" class="field__input" placeholder="Имя" name="name" required />
-                  </span>
-                </label>
-                <label class="form__field form__field--w50 field">
-                  <span class="field__label">
-                    Фамилия*
-                    <input type="text" class="field__input" placeholder="Фамилия" name="last_name" required />
-                  </span>
-                </label>
-                <label class="form__field form__field--w50 field">
-                  <span class="field__label">
-                    Телефон*
-                    <input type="tel" class="field__input" placeholder="+7()___ __ __" name="phone" required />
-                  </span>
-                </label>
-                <label class="form__field form__field--w50 field">
-                  <span class="field__label">
-                    Email*
-                    <input type="email" class="field__input" placeholder="email" name="Email" required />
-                  </span>
-                </label>
-              </div>
-            </div>
-            <label class="form__field form__field--mb30 field">
-              <span class="field__label field__label--textarea">
-                Есть пожелания? Напишите нам:
-              </span>
-              <textarea name="wish" class="field__textarea"></textarea>
-            </label>
-            <label class="form__check check">
-              <input type="checkbox" class="check_input" name="agree
-                       required" />
-              <span class="check__mark"></span>
-              <span class="check__label">
-                Я соглашаюсь с пользовательским соглашением и с политикой использования персональных данных
-              </span>
-            </label>
-            <div class="form__btns">
-              <button type="submit" class="form__btn btn">
-                Отправить
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+
 </body>
 
 </html>
